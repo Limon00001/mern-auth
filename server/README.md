@@ -160,31 +160,6 @@ SALT_NUMBER=<salt_number>
 NODE_ENV=<development> or <production>
 ```
 
-## 📥 Installation Process :
-
-To install this ***Application***, run:
-
-- For Windows:
-
-    - Create a folder named `server` or `backend`
-
-    - Open the terminal, paste the git repository link
-        ```bash
-        git clone 
-        ```
-   
-
-- Now install the dependencies by running the following command:
-  - In the terminal:
-    ```bash
-    npm install
-    ```
-
-  - Start the application
-    ```bash
-    npm run dev
-    ```
-
 ## 👨‍💻 Author
 
 [![LinkedIn][github-shield]][github-url]
