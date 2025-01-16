@@ -1,0 +1,100 @@
+<div align="center">
+
+![Contributor](https://img.shields.io/badge/Contributor-000?style=flat&logo=c&logoColor=whitesmoke) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![NPM](https://img.shields.io/badge/Npm-CC342D?style=flat&logo=npm&logoColor=white)
+![GitHub](https://img.shields.io/badge/Github-000?style=flat&logo=github&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-TailwindCss-38BDF8?style=flat&logo=tailwind-css&logoColor=white) ![Axios](https://img.shields.io/badge/-Axios-000000?style=flat&logo=axios&logoColor=white) ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat&logo=vs-code&logoColor=white) ![Toastify](https://img.shields.io/badge/-Toastify-F05032?style=flat&logo=toastify&logoColor=white)
+
+</div>
+
+<br />
+<br />
+
+<div style='display: flex; align-items: center; gap: 4rem'>
+<img src="../client/public/favicon.png" width="30"/>
+
+# autoBot - Authentication System Documentation
+
+</div>
+
+## 📸 Project Screenshot
+
+![Project Screenshot](../client/public/banner.png)
+
+## 📈 System Overview
+
+A modern React-based authentication system with email verification and password reset functionality.
+
+## Fronend Architecture
+
+## 🚀 Features
+
+- 🔐 User Authentication (Login/Register)
+- ✉️ Email Verification System
+- 🔑 Password Reset Flow
+- 🎨 Modern UI with Tailwind CSS
+- 🚀 Responsive Design
+- 🔒 Protected Routes
+- 🍪 Cookie-based Authentication
+- ⚡ Fast and Lightweight
+
+## 🛠️ Tech Stack
+
+- React.js
+- Tailwind CSS
+- Axios
+- React Router DOM
+- React Toastify
+
+## Project Structure
+
+```
+src/
+├── assets/
+├── components/
+│   ├── Hero.jsx
+│   └── Navbar.jsx
+├── context/
+│   └── AppContext.jsx
+├── pages/
+│   ├── EmailVerify.jsx
+│   ├── Login.jsx
+│   ├── NotFound.jsx
+│   └── ResetPassword.jsx
+└── App.jsx
+```
+
+## Key Components
+
+- `AppContext`: Manages global state and authentication
+- `Login`: Handles user registration and login
+- `EmailVerify`: Manages email verification process
+- `ResetPassword`: Handles password reset flow
+- `Navbar`: Navigation and user menu component
+- `Hero`: Main landing page component
+
+## Environment Variables
+
+| Variable         | Description     |
+| ---------------- | --------------- |
+| VITE_BACKEND_URI | Backend API URL |
+
+## ⚙️ Environment Variables
+
+```env
+VITE_BACKEND_URI=<backend_url>
+```
+
+## Available Scripts
+
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run preview`: Preview production build
+
+## 👨‍💻 Author
+
+[![LinkedIn][github-shield]][github-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+[github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=flat-square&logo=github&color=555&logoColor=white
+[github-url]: https://github.com/Limon00001
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/monayem-hossain-limon/
