@@ -13,6 +13,7 @@ import jwt from "jsonwebtoken";
 import { EMAIL_VERIFY_TEMPLATE, PASSWORD_RESET_TEMPLATE } from "../config/emailTemplate.js";
 import transporter from "../config/nodemailer.js";
 import User from "../models/userModel.js";
+import { generateCode } from "../utils/generateCode.js";
 
 // Registration
 const register = async (req, res) => {
@@ -144,6 +145,12 @@ const login = async (req, res) => {
             maxAge: 7 * 24 * 60 * 60 * 1000    // 7 day
         });
 
+        // Update last login
+        user.lastLogin = Date.now();
+
+        // Save the user
+        await user.save();
+
         // Return a success response
         return res.status(200).json({
             success: true,
@@ -203,7 +210,8 @@ const verifyOtp = async (req, res) => {
         }
 
         // Generate a random 6-digit OTP
-        const otp = (Math.floor(100000 + Math.random() * 1000000)).toString();
+        // const otp = (Math.floor(100000 + Math.random() * 1000000)).toString();
+        const otp = generateCode(6);
 
         // Save the OTP to the user's document
         user.verifyOtp = otp;

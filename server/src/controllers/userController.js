@@ -30,7 +30,9 @@ const getUser = async (req, res) => {
             success: true,
             data: {
                 name: user.name,
-                isAccountVerified: user.isAccountVerified
+                email: user.email,
+                isAccountVerified: user.isAccountVerified,
+                lastLogin: user.lastLogin
             }
         })
     } catch (error) {

@@ -71,6 +71,76 @@ src/
 - `Navbar`: Navigation and user menu component
 - `Hero`: Main landing page component
 
+#### Dashboard Implementation
+
+```javascript
+Features:
+1. Protected Access:
+   - JWT validation
+   - Auth state check
+   - Redirect logic
+
+2. User Data Display:
+   - Profile information
+   - Account status
+   - Join date formatting
+   - Activity tracking
+```
+
+## 📡 API Integration
+
+### Authentication Endpoints
+
+```javascript
+1. User Management:
+   POST /api/auth/register
+   POST /api/auth/login
+   POST /api/auth/logout
+
+2. Email Verification:
+   POST /api/auth/send-verify-otp
+   POST /api/auth/verify-account
+
+3. Password Reset:
+   POST /api/auth/send-reset-otp
+   POST /api/auth/reset-password
+```
+
+### Protected Routes
+
+```javascript
+Implementation:
+- JWT validation
+- Auth state checks
+- Automatic redirects
+- Error handling
+```
+
+### Navigation System
+
+```javascript
+Features:
+1. Route Protection:
+   - Auth checks
+   - Role-based access
+   - Redirect logic
+
+2. User Experience:
+   - Smooth transitions
+   - Loading states
+   - Error handling
+```
+
+### Date Formatting (`formatDate.js`)
+
+```javascript
+Functionality:
+- Date string parsing
+- Invalid date handling
+- Localized formatting
+- 12-hour time format
+```
+
 ## Environment Variables
 
 | Variable         | Description     |
@@ -88,6 +158,13 @@ VITE_BACKEND_URI=<backend_url>
 - `npm run dev`: Start development server
 - `npm run build`: Build for production
 - `npm run preview`: Preview production build
+
+<!-- ## Author & License
+```
+Author: Monayem Hossain Limon
+GitHub: @Limon00001
+Copyright © 2024 monayem_hossain_limon
+``` -->
 
 ## 👨‍💻 Author
 

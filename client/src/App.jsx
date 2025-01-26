@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 // Internal Dependencies
+import Dashboard from './pages/Dashboard';
 import EmailVerify from './pages/EmailVerify';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -22,6 +23,7 @@ const App = () => {
       <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/email-verify" element={<EmailVerify />} />
         <Route path="/reset-password" element={<ResetPassword />} />
