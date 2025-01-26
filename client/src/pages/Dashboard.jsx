@@ -20,7 +20,6 @@ const Dashboard = () => {
 
   const { userData, backendUrl, setUserData, setIsLoggedIn } =
     useContext(AppContext);
-  console.log(userData);
 
   // configures `Axios` to include credentials like cookies, authorization headers, or client certificates with requests.
   axios.defaults.withCredentials = true;

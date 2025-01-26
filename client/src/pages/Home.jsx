@@ -5,7 +5,7 @@
  * @copyright 2024 monayem_hossain_limon
  */
 
-// External Dependencies
+// Internal Dependencies
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 
