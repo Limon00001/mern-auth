@@ -17,7 +17,12 @@
 
 ## 📸 Project Screenshot
 
-![Project Screenshot](./client/public/banner.png)
+<!-- ![Project Screenshot](./client/public/banner.png) -->
+<img src="./client/public/banner.png" alt="Project Screenshot" style="width: 50rem; height: auto;">
+
+### 🔗 [Live Link](https://mern-auth-client-cv0j.onrender.com/)
+
+<br />
 
 ## 📈 System Overview
 
